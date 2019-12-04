@@ -652,7 +652,7 @@ func SetupViper(v *viper.Viper, filename string) {
 	v.SetDefault("adapters.rubicon.disabled", true)
 
 	v.SetDefault("adapters.adtelligent.endpoint", "http://hb.adtelligent.com/auction")
-	v.SetDefault("adapters.adform.endpoint", "http://adx.adform.net/adx")
+	v.SetDefault("adapters.adform.endpoint", "https://adx.adform.net/adx")
 	v.SetDefault("adapters.appnexus.endpoint", "http://ib.adnxs.com/openrtb2") // Docs: https://wiki.appnexus.com/display/supply/Incoming+Bid+Request+from+SSPs
 	v.SetDefault("adapters.appnexus.platform_id", "5")
 	v.SetDefault("adapters.advangelists.endpoint", "http://nep.advangelists.com/xp/get?pubid={{.PublisherID}}")

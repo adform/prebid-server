@@ -24,7 +24,7 @@ import (
 )
 
 func TestJsonSamples(t *testing.T) {
-	adapterstest.RunJSONBidderTest(t, "adformtest", NewAdformBidder(nil, "http://adx.adform.net/adx"))
+	adapterstest.RunJSONBidderTest(t, "adformtest", NewAdformBidder(nil, "https://adx.adform.net/adx"))
 }
 
 type aTagInfo struct {
@@ -259,7 +259,7 @@ func preparePrebidRequestBody(requestData aBidInfo, t *testing.T) *bytes.Buffer 
 // OpenRTB auction tests
 
 func TestOpenRTBRequest(t *testing.T) {
-	bidder := NewAdformBidder(nil, "http://adx.adform.net")
+	bidder := NewAdformBidder(nil, "https://adx.adform.net")
 
 	testData := createTestData(true)
 	request := createOpenRtbRequest(&testData)
